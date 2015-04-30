@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head ng-app="app">
+
+	<title>{{ app.title }}</title>
+
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="scripts/vendor/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+
+	<!-- scripts -->
+	<script src="scripts/vendor/jquery/dist/jquery.js"></script>
+	<script src="scripts/vendor/angular/angular.js"></script>
+	<script src="scripts/vendor/angular-resource/angular-resource.js"></script>
+	<script src="scripts/vendor/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="scripts/vendor/angular-bootstrap/ui-bootstrap.js"></script>
+	<script src="scripts/vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>	
+
+</head>
+
+<body>
+
+	<form role="form">
+	  <div class="form-group">
+	    <label for="nombre">Nombre</label>
+	    <input type="test" class="form-control" id="nombre" ng-model="profesional.nombre">
+	  </div>
+	  <div class="form-group">
+	    <label for="titulo">Titulo</label>
+	    <input type="text" class="form-control" id="titulo" ng-model="profesional.tituloEsp">
+	  </div>
+	  <div class="form-group">
+	    <label for="descripcion">Descripcion</label>
+	    <input type="text" class="form-control" id="descripcion" ng-model="profesional.descripcionEsp">
+	  </div> 
+	</form>
+
+	<input type="file"
+         file-input="files"
+         multiple/>
+         
+	<li ng-repeat="file in files"> {{file.name}} </li>
+
+
+	<!-- angular application -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/app/app.module.core.js"></script>
+	<script src="scripts/app/services/lb-services.js"></script>
+	<script src="scripts/app/controllers/fileController.js"></script>
+	<script src="scripts/app/directives/fileHandler.js"></script>
+	
+	<!-- -->
+
+	<!-- -->
+
+</body>
+
+</html>

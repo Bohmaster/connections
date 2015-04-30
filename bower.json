@@ -1,0 +1,25 @@
+{
+  "name": "ConnectionsCMS",
+  "version": "1.0.0",
+  "authors": [
+    "Bohmaster <intotheflux@gmail.com>"
+  ],
+  "description": "Connections CMS Administrator",
+  "license": "MIT",
+  "homepage": "www.connections.com.ar",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-ui-router": "~0.2.14",
+    "angular-ui-bootstrap": "~0.12.1",
+    "angular-resource": "~1.3.15",
+    "bootstrap": "~3.3.4",
+    "angular-bootstrap": "~0.12.1"
+  }
+}
